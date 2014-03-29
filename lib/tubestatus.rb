@@ -4,6 +4,8 @@ require "open-uri"
 require 'net/http'
 require "json"
 require 'text-table'
+require 'colorize'
+#API provided by tubeupdates.com
 
 def getAll(url)
     exchanges = []
@@ -68,11 +70,11 @@ case ARGV[0]
   else
     name = info[1]['name'].gsub("\&amp;", '&')
     status = info[1]['status'].split.map(&:capitalize).join(' ')
-      if status == "good service"
-         status = status.green
-      else
-         status = status.red
-      end
+    if status == "Good Service"
+       status = status.green
+    else
+       status = status.red
+    end
     
     puts "Line: " + name
     puts "Status: " + status
