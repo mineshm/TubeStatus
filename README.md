@@ -30,7 +30,7 @@ $ tubestatus
 ------------------------------------
 ```
 
-Display a detailed status for a particular lines
+Display a detailed status for a particular line
 ```
 $ tubestatus circle
 Line: Circle
