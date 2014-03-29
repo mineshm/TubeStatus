@@ -36,6 +36,27 @@ $ tubestatus circle
 Line: Circle
 Status: Good Service
 Messages: None
+```
+
+The accepted parameters are
+```
+bakerloo
+central
+district
+docklands
+hammersmithcity
+jubilee
+metropolitan
+northern
+piccadilly
+overground
+victoria
+waterloocity
+```
+
+
+
+
 
 ```
 
